@@ -1,0 +1,66 @@
+body{
+    background: #f3edfd;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav{
+    background: pink;
+    width: 100vw;
+    height: 100px;
+}
+
+main{
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .input-section{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .input-section .text-input{
+    width: 800px;
+    resize: none;
+    font-size: 22px;
+    border: 1px;
+    outline: 1px solid #c9c9f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main .input-section button{
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px;
+    outline: 1px solid #c9c9f0;
+    font-size: 18px;
+}
+
+main .input-section button:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: smooth;
+}
+
+main .output-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+main .output-section .token {
+    background-color: #d2bcfb;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
