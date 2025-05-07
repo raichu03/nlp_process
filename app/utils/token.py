@@ -57,9 +57,11 @@ class Tokenizer:
         
         if text is None:
             return []
+        
         if not isinstance(text,str):
             logging.error(f"Input must be a string, but received: {type(text)}")
             raise TypeError(f"Input must be a string, but received: {type(text)}")
+        
         if not text.strip():
             return []
         

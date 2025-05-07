@@ -1,5 +1,4 @@
 import spacy
-
 import logging
 
 logging.basicConfig(

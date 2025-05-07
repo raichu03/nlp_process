@@ -1,5 +1,9 @@
+import nltk
 from nltk.stem import PorterStemmer, SnowballStemmer
 from nltk.tokenize import word_tokenize
+
+nltk.download('punkt')
+nltk.download('punkt_tab')
 
 import logging
 
