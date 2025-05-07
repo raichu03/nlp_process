@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from routes import tokenize, steamming, named_recog, pos_tagging
+from routes import tokenize, steamming, named_recog, pos_tagging, reduced_embedd
 
 app = FastAPI()
 
@@ -11,6 +11,7 @@ app.include_router(tokenize.router)
 app.include_router(steamming.router)
 app.include_router(named_recog.router)
 app.include_router(pos_tagging.router)
+app.include_router(reduced_embedd.router)
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
