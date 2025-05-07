@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <div class="task active" id="tokens-btn">Tokenize</div>
+        <div class="task" id="stemming-btn">Stemming</div>
+        <div class="task" id="pos-btn">POS</div>
+        <div class="task" id="ner-btn">NER</div>
+        <div class="embed-btn">Embedding</div>
+    </nav>
     <main>
         <div class="input-section" id="input-section">
             <textarea class="text-input" id="text-input" rows="4" placeholder="Enter text to split..."></textarea>
@@ -15,7 +21,9 @@
             <button id="split-btn">Split Text</button>
         </div>
 
-        <div class="output-section" id="output-section"></div>
+        <div class="output-section" id="output-section">
+            
+        </div>
     </main>
 
     <script src="../static/js/index.js"></script>
