@@ -76,10 +76,8 @@ async def stemm_data(data: TextInput, embedd: GloveEmbeddingGenerator = Depends(
         
         
         reducer = DimensionReduction(embeddings_dict=embed)
-        print("yes")
         embed_pca = reducer.perform_pca(n_components=2)
         response = reducer.get_reduced_data()
-        print(response)
         
         if response is not None:
             return ReducedResponse(reduced=response)
