@@ -80,6 +80,15 @@ main .output-section{
     flex-wrap: wrap;
     gap: 5px;
     margin-top: 50px;
+    width: 90%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 main .output-section .token {
@@ -97,4 +106,63 @@ main .output-section .token .entity{
     border-right: 2px solid #424f9d;
     padding-right: 8px;
     margin-right: 8px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #d1d5db;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 10px;
+    fill: #6b7280;
+}
+
+.word-label {
+    font-family: sans-serif;
+    font-size: 12px;
+    fill: #1f2937;
+    pointer-events: none;
+}
+
+.data-point {
+    fill: #3b82f6;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: fill 0.2s ease-in-out;
+}
+
+.data-point:hover {
+    fill: #1d4ed8;
+}
+
+/* Tooltip styles */
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: #333;
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    transform: translate(-50%, -100%);
+}
+
+.origin-line {
+    stroke: #9ca3af;
+    stroke-width: 1;
+    opacity: 0.6;
+}
+
+.origin-axis {
+    stroke: #4b5563;
+    stroke-width: 1.5;
+    shape-rendering: crispEdges;
 }
